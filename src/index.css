@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: normal 125%/1.4 "SpaceGrotesk","Lato","Open Sans","Helvetica Neue Light","Helvetica Neue","Helvetica","Arial",sans-serif;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image:  url('./assets/cold-blue-bg.jpg');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover; 
+  padding-top: 30px;
+  
+}
+.search-box {
+  width: 100%;
+  margin: 0 0 5px;
+  padding-top: 50px; 
+  
+}
+ .search-bar {
+  display: block; 
+  width: 100%;
+  /* padding: 25px; */
+  text-align: center;
+
+}
+
+
+.search-box .search-bar .form-group input {
+  line-height: 20px;
+  font-size: 25px;
+  border-radius: 2px;
+  border-style: none;
+  background-color: rgb(226, 232, 240);
+  letter-spacing: 0.05em;
+  min-width:20%;
+  padding: 10px 10px;
+  margin: 5px 5px;
+}
+
+ .search-bar-autocomplete{
+  line-height: 20px;
+  font-size: 12px;
+  border-radius: 2px;
+  border-style: none;
+  background-color: rgb(226, 232, 240);
+  letter-spacing: 0.05em;
+  padding: 1px 10px;
+  margin: 2px 300px;
+}
+
+.search-bar-autocomplete:hover{
+  background-color: burlywood;
+
+}
+ .weatherinfopanel {
+  min-height: 100vh;
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75)); */
+  padding: 25px;
+  margin:50px;
+}
+
+.location-box .location {
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 20px; 
+  /* text-shadow: 3px 3px rgba(50, 50, 70, 0.5);*/
+} 
+
+.app {
+  background-image: url('./assets/misty-pink-bg.jpg');
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  padding-bottom: 30px; 
+} 
+
+.app.warm {
+  background-image: url('./assets/yellow-sky.jpg');
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.weather-box {
+  text-align: center;
+}
+ .flex-container  {
+  position: relative;
+  text-align: center;
+  /* display: flex;  */
+  flex-wrap: wrap;
+  /* text-align: center; */
+  /* overflow: scroll hidden; */
+  margin: 15px;
+  padding-bottom: 10px;
+   white-space: nowrap;
+}
+
+.temp-info-box   {
+  position: relative;
+  display: inline-block;
+  margin: 10px auto;
+  border-radius: 16px;
+  padding: 5px 5px;
+  color: #FFF;
+  font-size: 42px;
+  font-weight: 500;
+  text-align: center;
+}
+.temp-info-box p{
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.temp-info-box .temp p{ 
+   display: inline-block;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  font-size: 25px;
+}
+.temp-info-box  .description{
+   color: #FFF;
+  font-size: 28px;
+  font-weight: 200;
+}
+
+
+.sunrise-box .sunrise {
+  position: relative;
+  display: inline-block;
+  border-radius: 16px;
+  padding: 5px 5px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.sunset-box .sunset {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px; 
+  margin: 10px 10px;
+  background-color: rgba(218, 230, 240, 0.2);  
+
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 300;
+  /* text-shadow: 3px 6px rgba(50, 50, 70, 0.5); */
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2); 
+    
+}
+
+.sunset-box .sunset:hover {
+  background-color: rgb(100, 63, 248);
+  color: rgb(255, 255, 255);
+}
+
+.forecast-box .hourly {
+  position: relative;
+  display: inline-block;
+  padding: 15px 45px; 
+  margin: 10px 10px;
+ background-color: rgba(218, 230, 240, 0.2);  
+  /* border-radius: 16px; */
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 300;
+  /* text-shadow: 3px 6px rgba(50, 50, 70, 0.5); */
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-box .hourly:hover {
+  background-color: rgb(100, 63, 248);
+  color: rgb(255, 255, 255);
+}
+.forecast-box .hourly p {
+  padding: 5px 2px;
+}
+
+.flex-container .forecast-box {
+  position: relative;
+  text-align: center;
+  overflow: scroll hidden; 
+  margin: 15px;
+  padding-bottom: 10px;
+ 
+}
+.flex-container .forecast-info-box{
+
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.flex-container .forecastTitle {
+ color:#FFF;
+ font-size: 25px;
+ margin-bottom: 20px;
+}
+
