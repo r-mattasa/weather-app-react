@@ -77,7 +77,7 @@ function WeatherInfoContainer() {
     const [cityList, setCityList] = useState([]);
     useEffect(() => {
         const loadCities = async () => {
-            await fetch(`http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=FbFeDyouDKFDIsgvjDcc3ii9LutTTrMu&q=${city}`)
+            await fetch(`http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=&q=${city}`)
                 .then(response => response.json())
                 .then(result => {
                     setCityList(result);
