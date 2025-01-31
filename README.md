@@ -27,6 +27,7 @@ Before run the project you need to do the following steps:
 In the project directory, you can run:
 
 ### `npm run dev`
+<img width="823" alt="climate" src="https://github.com/user-attachments/assets/5e0a0862-8e44-4483-ba6e-0c602c36e8b8" />
 
 Runs the app in the development mode.\
 Open [http://localhost:PORTNUMBER] to view it in the browser.
